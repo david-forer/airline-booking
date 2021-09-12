@@ -13,7 +13,7 @@
 
     <div class="airplane-container">
       <label>Pick Business or Regular Seating</label>
-      <select id="seat-class" onchange="showHide(this.value)";>
+      <select class="seat-class" onchange="showDiv(this)">
         <option value="">Seat Class</option>
         <option value="business">Business Class</option>
         <option value="extra">Extra Leg Room</option>
@@ -30,8 +30,8 @@
       <small>occupied</small>
     </ul>
 
-    <div class="container" id="divShow" >
-      <div id="business-class">
+    <div class="container" >
+      <div class="business-class" id="bc" >
       <div class="row">
         <div class="seat"></div>
         <div class="seat occupied"></div>

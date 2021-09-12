@@ -66,7 +66,7 @@ body {
 .container {
   perspective: 1000px;
   margin-bottom: 30px;
-  display: none;
+ 
 }
 
 .row {
@@ -110,6 +110,14 @@ body {
   margin-bottom: 40px;
 }
 
-#divShow {
+#bc {
+  display: none;
+}
+
+#extra-leg {
+  display: none;
+}
+
+#regular-seats {
   display: none;
 }
