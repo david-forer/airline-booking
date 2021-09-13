@@ -43,19 +43,19 @@ body {
 
 .showcase {
   background: rgba(0, 0, 0, 0.1);
-  padding: 5px 10px;
+  padding: 5px 15px;
   border-radius: 5px;
   color: #777;
   list-style-type: none;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 
 .showcase li {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   /* margin: 0 10px; */
 }
 
@@ -73,7 +73,7 @@ body {
   display: flex;
 }
 
-
+/* seat sizes and colors when occupied or selected */
 .seat {
   background-color: #444451;
   height: 24px;
@@ -82,27 +82,31 @@ body {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-
+.label {
+  font-weight: bold;
+  font-size: 20px;
+}
+.seat-class {
+  margin: 5px;
+}
 .seat.selected {
   background-color: #6feaf6;
 }
-.seat.selected small {
+/* .seat.selected small {
   margin-right: -15px !Important;
   color: red;
-}
-
+} */
 .seat.occupied {
   background-color: rgb(255, 2, 2);
 }
-
+/* split the seats like you have 2 aisles */
 .seat:nth-of-type(2) {
   margin-right: 28px;
 }
-
 .seat:nth-last-of-type(2) {
   margin-left: 28px;
 }
-
+/* split the classes after first and extra leg */
 .second-row {
   margin-bottom: 40px;
 }
@@ -110,14 +114,13 @@ body {
   margin-bottom: 40px;
 }
 
+/* for use in hiding divs and displaying them on click */
 #bc {
   display: none;
 }
-
 #extra-leg {
   display: none;
 }
-
 #regular-seats {
   display: none;
 }
